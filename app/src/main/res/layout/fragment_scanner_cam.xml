@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/java_camera_view_opencv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        opencv:camera_id="any"
+        opencv:show_fps="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/app_name"
+        android:rotation="-90"
+        android:src="@drawable/ic_cam"
+        opencv:layout_constraintBottom_toBottomOf="parent"
+        opencv:layout_constraintEnd_toEndOf="parent"
+        opencv:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switch_cam_auto_detect"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="@dimen/gap_normal"
+        android:checked="false"
+        android:rotation="-90"
+        opencv:layout_constraintBottom_toTopOf="@id/btn_capture"
+        opencv:layout_constraintEnd_toEndOf="@id/btn_capture"
+        opencv:layout_constraintStart_toStartOf="@id/btn_capture"
+        opencv:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="-90"
+        android:text="@string/auto_detect"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_small"
+        opencv:layout_constraintBottom_toBottomOf="@+id/switch_cam_auto_detect"
+        opencv:layout_constraintEnd_toEndOf="parent"
+        opencv:layout_constraintStart_toEndOf="@+id/switch_cam_auto_detect"
+        opencv:layout_constraintTop_toTopOf="@+id/switch_cam_auto_detect" />
+
+    <ImageButton
+        android:id="@+id/btn_cam_reload"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/gap_normal"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/reload"
+        android:rotation="-90"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_reload"
+        opencv:layout_constraintBottom_toBottomOf="parent"
+        opencv:layout_constraintEnd_toEndOf="@+id/btn_capture"
+        opencv:layout_constraintStart_toStartOf="@+id/btn_capture"
+        opencv:layout_constraintTop_toBottomOf="@+id/btn_capture" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:rotation="-90"
+        android:text="@string/reload"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_small"
+        opencv:layout_constraintBottom_toBottomOf="@+id/btn_cam_reload"
+        opencv:layout_constraintEnd_toEndOf="parent"
+        opencv:layout_constraintStart_toEndOf="@+id/btn_cam_reload"
+        opencv:layout_constraintTop_toTopOf="@+id/btn_cam_reload" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

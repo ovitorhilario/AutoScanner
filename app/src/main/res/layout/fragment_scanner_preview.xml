@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_img_editor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_img_editor"
+            app:menu="@menu/app_bar_image_editor"
+            app:navigationIcon="@drawable/ic_return"
+            app:title="@string/image_editor_toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/iv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/gap_normal"
+        app:layout_constraintBottom_toTopOf="@id/rv_preview_filter_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar_img_editor"
+        android:contentDescription="@string/preview_image_edited" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_preview_filter_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/gap_normal"
+        android:layout_marginBottom="@dimen/gap_normal"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/cl_ads_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/filter_icon_item" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_ads_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ads_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="LARGE_BANNER"
+            ads:adUnitId="@string/unit_id_test_banner"
+            ads:layout_constraintTop_toTopOf="parent"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintStart_toStartOf="parent">
+        </com.google.android.gms.ads.AdView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

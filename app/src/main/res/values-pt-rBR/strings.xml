@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoScanner</string>
+    <string name="tips_tittle">Dicas</string>
+    <string name="tips_topic_1">- Procure lugares com uma boa iluminação para realizar a detecção de documentos.</string>
+    <string name="tips_topic_2">- É importante haver um contraste entre o papel e o fundo.</string>
+    <string name="tips_topic_3">- Para ignorar a detecção de quadriláteros no scanner você pode desativar o botão de auto-detect, assim será considerado toda a área do câmera.</string>
+    <string name="features_tittle">Funcionalidades</string>
+    <string name="features_topic_1">- Auto Detecção de documentos na imagem, isto é, a análise é feita a cada frame recebido, possuindo um feedback imediato ao usuário.</string>
+    <string name="features_topic_2">- Aplicação vários filtros que ajudam a melhorar a qualidade e visualização da imagem.</string>
+    <string name="features_topic_3">- Salve suas imagens rapidamente em sua galeria.</string>
+    <string name="permission_denied_msg">Permissões negadas</string>
+    <string name="permission_accept_msg">Permissões concedidas</string>
+    <string name="btn_pick_image">Selecionar Imagem</string>
+    <string name="btn_scanner_alt">Botão de Scanner</string>
+    <string name="filter_image_alt">Imagem com Filtro</string>
+    <string name="image_banner_home_alt">Banner da página inicial</string>
+    <string name="image_button_pick_image_folder_alt">Ícone da seleçãode imagem</string>
+    <string name="image_picker_banner_alt">Banner da Seleção de Imagens</string>
+    <string name="icon_autoscan_app_alt">Ícone do aplicativo</string>
+    <string name="available_filters">Filtros disponíveis</string>
+    <string name="settings_button_alt">Botão de configurações</string>
+    <string name="btn_define_cam_size">Botão de mudança de resolução</string>
+    <string name="cam_size">Tamanho da resolução</string>
+    <string name="btn_bug_report">Botão de Reportar Bug</string>
+    <string name="bug_report">Reportar Bug 🪲</string>
+    <string name="cancel">Cancelar</string>
+    <string name="decline">Recusar</string>
+    <string name="accept">Aceitar</string>
+    <string name="report">Reportar</string>
+    <string name="resolution">Resolução 📷</string>
+    <string name="bug_report_question">Você deseja abrir uma guia no navegador para enviar um bug?</string>
+    <string name="permission_granted">Permissões Garantidas</string>
+    <string name="permission_denied">Permissões Negadas</string>
+    <string name="saved_msg">Salvado como</string>
+    <string name="unsaved_msg">Erro ao Salvar</string>
+    <string name="preview_image_edited">Pré-Visualização da imagem editada</string>
+    <string name="reload">Recarregar</string>
+    <string name="success">Sucesso</string>
+    <string name="error">Erro</string>
+    <string name="btn_save_image">Botão para salvar a imagem editada</string>
+    <string name="image_editor_toolbar">Edicão de Imagem</string>
+</resources>

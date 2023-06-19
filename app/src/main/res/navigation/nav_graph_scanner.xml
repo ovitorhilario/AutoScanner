@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_scanner.xml"
+    app:startDestination="@id/scanner_loader_fragment">
+
+    <fragment
+        android:id="@+id/scanner_loader_fragment"
+        android:name="com.vitorhilarioapps.autoscanner.ui.scanner.view.ScannerLoaderFragment"
+        android:label="Scanner Cam"
+        tools:layout="@layout/fragment_scanner_loader" >
+
+        <action
+            android:id="@+id/action_loader_to_cam"
+            app:destination="@id/scanner_cam_fragment" />
+
+        <action
+            android:id="@+id/action_loader_to_preview"
+            app:destination="@id/scanner_preview_fragment">
+            <argument
+                app:argType="boolean"
+                android:defaultValue="false"
+                android:name="picked_image" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/scanner_cam_fragment"
+        android:name="com.vitorhilarioapps.autoscanner.ui.scanner.view.ScannerCamFragment"
+        android:label="Scanner Cam"
+        tools:layout="@layout/fragment_scanner_cam" >
+        <action
+            android:id="@+id/action_cam_to_preview"
+            app:destination="@id/scanner_preview_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/scanner_preview_fragment"
+        android:name="com.vitorhilarioapps.autoscanner.ui.scanner.view.ScannerPreviewFragment"
+        android:label="Scanner Preview"
+        tools:layout="@layout/fragment_scanner_preview">
+
+        <argument
+            app:argType="boolean"
+            android:defaultValue="false"
+            android:name="picked_image" />
+        <action
+            android:id="@+id/action_preview_to_cam"
+            app:destination="@id/scanner_cam_fragment" />
+
+    </fragment>
+
+</navigation>

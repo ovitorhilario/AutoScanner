@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">AutoScanner</string>
+
+    <string name="tips_tittle">Tips</string>
+    <string name="tips_topic_1">- Look for places with good lighting to carry out document detection.</string>
+    <string name="tips_topic_2">- It is important to have a contrast between the paper and the background.</string>
+    <string name="tips_topic_3">- To ignore the detection of quadrilaterals in the scanner, you can disable the auto-detect button, in this way the entire area of the camera will be considered.</string>
+
+    <string name="features_tittle">Features</string>
+    <string name="features_topic_1">- Auto Detection of documents in the image, that is, the analysis is made for each frame received, providing immediate feedback to the user.</string>
+    <string name="features_topic_2">- Application of various filters that help to improve the quality and visualization of the image.</string>
+    <string name="features_topic_3">- Quickly save your images to your gallery</string>
+
+    <string name="tips_icon" translatable="false">tips_banner.png</string>
+    <string name="features_icon" translatable="false">features_banner.png</string>
+    <string name="pick_image_icon" translatable="false">pick_image_banner.png</string>
+
+    <string name="permission_denied_msg">Permission Denied</string>
+    <string name="permission_accept_msg">Permission Accept</string>
+    <string name="btn_pick_image">Pick Image</string>
+    <string name="btn_scanner_alt">Scanner button</string>
+    <string name="btn_scanner" translatable="false">Scan</string>
+    <string name="filter_image_alt">Filter Image</string>
+    <string name="image_banner_home_alt">Image banner home screen</string>
+    <string name="lorem_ipsum_tittle" translatable="false">Lorem Ipsum</string>
+    <string name="lorem_ipsum_desc" translatable="false">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.</string>
+    <string name="image_button_pick_image_folder_alt">Image button pick image folder</string>
+    <string name="image_picker_banner_alt">Image picker banner</string>
+    <string name="icon_autoscan_app_alt">Icon autoscan app</string>
+    <string name="available_filters">Available Filters</string>
+
+    <!-- App Ids -->
+    <string name="app_id_test" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+
+    <!-- Unit AdMob Ids -->
+    <string name="unit_id_test_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="unit_id_test_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="settings_button_alt">settings button</string>
+    <string name="btn_define_cam_size">button define cam size</string>
+    <string name="cam_size">Cam size</string>
+    <string name="btn_bug_report">Bug report</string>
+    <string name="bug_report">Bug Report 🪲</string>
+    <string name="cancel">Cancel</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="report">Report</string>
+    <string name="resolution">Resolution 📷</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="bug_report_url" translatable="false">https://forms.gle/GDYH6HVongmN59du8</string>
+    <string name="bug_report_question">Do you want to open a browser tab to submit a bug?</string>
+    <string name="app_author" translatable="false">Vitor Hilário - Apps</string>
+
+    <string name="permission_granted">Permissions granted</string>
+    <string name="permission_denied">Permissions denied</string>
+
+    <string name="success">Success</string>
+    <string name="saved_msg">Saved as</string>
+    <string name="unsaved_msg">Error Saving</string>
+    <string name="preview_image_edited">Preview image edited</string>
+    <string name="auto_detect" translatable="false">Auto-Detect</string>
+    <string name="reload">Reload</string>
+    <string name="error">Error</string>
+    <string name="btn_save_image">button download image</string>
+    <string name="image_editor_toolbar">Image Editor</string>
+
+</resources>

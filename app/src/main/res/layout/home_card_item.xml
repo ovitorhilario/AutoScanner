@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/gap_normal"
+    android:layout_marginBottom="@dimen/gap_normal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/gap_normal">
+
+        <ImageView
+            android:id="@+id/iv_card_item_banner"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/image_banner_home_alt"
+            android:foreground="@drawable/black_gradient"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blank_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_card_item_topic_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/gap_normal"
+            android:layout_marginTop="@dimen/gap_normal"
+            android:text="@string/lorem_ipsum_desc"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/iv_card_item_banner" />
+
+        <TextView
+            android:id="@+id/tv_card_item_topic_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/gap_normal"
+            android:text="@string/lorem_ipsum_desc"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_item_topic_1" />
+
+        <TextView
+            android:id="@+id/tv_card_item_topic_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/gap_normal"
+            android:text="@string/lorem_ipsum_desc"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_item_topic_2" />
+
+        <TextView
+            android:id="@+id/tv_card_item_tittle_in_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/lorem_ipsum_tittle"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/iv_card_item_banner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_card_item_banner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

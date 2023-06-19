@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_cam_size"
+        android:contentDescription="@string/btn_define_cam_size"
+        android:icon="@drawable/ic_image_size"
+        android:title="@string/cam_size"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_bug_report"
+        android:contentDescription="@string/btn_bug_report"
+        android:icon="@drawable/ic_bug_report"
+        android:title="@string/bug_report"
+        app:showAsAction="ifRoom" />
+
+</menu>

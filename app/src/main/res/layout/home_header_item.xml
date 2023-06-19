@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/gap_normal">
+
+    <ImageView
+        android:id="@+id/iv_header_item_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/icon_autoscan_app_alt"
+        android:src="@drawable/blank_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_header_item_text_top_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gap_normal"
+        android:text="@string/app_name"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_header_item_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/settings_button_alt"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

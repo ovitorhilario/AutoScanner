@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/gap_normal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_filter_item_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_filter_item_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_shape"
+            android:contentDescription="@string/filter_image_alt"
+            android:src="@drawable/blank_bg" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_filter_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/lorem_ipsum_tittle"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_filter_item_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
