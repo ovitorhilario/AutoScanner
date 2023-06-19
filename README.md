@@ -14,7 +14,7 @@ Este é um projeto de auto detecção, limiarização e mudança de perspectivas
 
 ## ScreenShot 📸
 
-| Tela Inicial | Álbum | Música |
+| Tela Inicial | Scanner | Preview |
 | :--------------------: | :--------------------: | :--------------------: |
 |![01](https://github.com/ovitorhilario/AutoScannerApp/assets/81326138/fe490373-af35-493f-b8ba-35902c1766d0) | ![02](https://github.com/ovitorhilario/AutoScannerApp/assets/81326138/5686d413-ea4f-4a8d-b3fe-31e24a937985) | ![03](https://github.com/ovitorhilario/AutoScannerApp/assets/81326138/2d8942d7-c507-4c14-96c6-875b104123f1)|
 
