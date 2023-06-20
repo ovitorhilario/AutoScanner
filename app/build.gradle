@@ -20,11 +20,17 @@ android {
 
     buildTypes {
         release {
-
             minifyEnabled true
             shrinkResources true
 
+            // Test App Id
+            manifestPlaceholders["appIdTest"] = "ca-app-pub-3940256099942544~3347511713"
+
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            // Test App Id
+            manifestPlaceholders["appIdTest"] = "ca-app-pub-3940256099942544~3347511713"
         }
     }
     compileOptions {
