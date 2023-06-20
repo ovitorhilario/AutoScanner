@@ -51,7 +51,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/app_id_test"/>
+            android:value="${appIdTest}"/>
 
     </application>
 
