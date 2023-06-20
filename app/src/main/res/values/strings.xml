@@ -29,9 +29,6 @@
     <string name="icon_autoscan_app_alt">Icon autoscan app</string>
     <string name="available_filters">Available Filters</string>
 
-    <!-- App Ids -->
-    <string name="app_id_test" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
-
     <!-- Unit AdMob Ids -->
     <string name="unit_id_test_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
     <string name="unit_id_test_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
