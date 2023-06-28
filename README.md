@@ -7,10 +7,12 @@ Este é um projeto de auto detecção, limiarização e mudança de perspectivas
 
 - Android | Kotlin ✔︎
 - OpenCV for Android SDK ✔︎
-- NavigationUI ✔︎
-- Picasso ✔︎
+- LiveData ✔︎
 - DataStore ✔︎
+- Navigation Component ✔︎
+- Picasso ✔︎
 - Material Design 3 ✔︎
+- ViewGroups, ViewBinding, Custom Components ✔︎
 
 ## ScreenShot 📸
 
