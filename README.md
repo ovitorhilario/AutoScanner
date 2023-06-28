@@ -12,7 +12,7 @@ Este é um projeto de auto detecção, limiarização e mudança de perspectivas
 - Navigation Component ✔︎
 - Picasso ✔︎
 - Material Design 3 ✔︎
-- ViewGroups, ViewBinding, Custom Components ✔︎
+- ViewGroups, ViewBinding ✔︎
 
 ## ScreenShot 📸
 
